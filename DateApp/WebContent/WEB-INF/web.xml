@@ -7,6 +7,6 @@
   </servlet>
   <servlet-mapping>
   		<servlet-name>DateServlet</servlet-name>
-  		<url-pattern>/date</url-pattern>
+  		<url-pattern>/*</url-pattern>
   </servlet-mapping>
 </web-app>
