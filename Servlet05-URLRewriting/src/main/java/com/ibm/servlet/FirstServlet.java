@@ -18,8 +18,9 @@ public class FirstServlet extends HttpServlet {
 			response.setContentType("text/html");
 			out = response.getWriter();
 			String n = request.getParameter("uname");
-			out.print("<a href='servlet2?uname="+n+"'>Visit</a>");
-			
+			out.println("<form action='"+response.encodeUrl(n)+"' method='post'");
+			out.println("<input type='submit' value='Submit'>");
+			out.println("</form>");
 		} catch (Exception e) {
 			System.out.println(e);
 		} finally {
